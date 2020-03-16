@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url:  jdbc:postgresql://localhost:5432/db_springboot_cloud
+    username: postgres
+    password: atleti1983
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
