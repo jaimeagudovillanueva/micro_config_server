@@ -6,3 +6,18 @@ config:
         secret: 12345
       jwt:
         key: algun_codigo_secreto_aeiou
+
+
+spring:
+  zipkin:
+    base-url: http://zipkin-server:9411/
+  rabbitmq:
+    host: rabbitmq
+  sleuth:
+    sampler:
+      probability:  1.0
+
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://eureka-server:8761/eureka
